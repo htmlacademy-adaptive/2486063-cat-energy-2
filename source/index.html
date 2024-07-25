@@ -12,20 +12,19 @@
 <body class="page__body">
   <header class="header">
     <img class="header__mobile-logo" src="images/mobile-logo.svg" width="33" height="38" alt="логотип cat energy">
-    <img class="header__header-logo-label" width="101" height="18" src="images/header-logo-label.svg" alt="надпись cat energy">
-    <nav class="mobile-nav">
-      <button class="mobile-nav__toggle" type="button">
-        <span class="visually-hidden">открыть меню</span>
-      </button>
-      <div class="mobile-nav__wrapper">
-        <ul class="mobile-nav__list mobile-nav-list">
-          <li class="mobile-nav-list__item">
+    <img class="header__logo-label" width="101" height="18" src="images/header-logo-label.svg" alt="надпись cat energy">
+    <button class="mobile-nav__toggle" type="button" aria-label="открыть меню">
+    </button>
+    <nav class="navigation">
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          <li class="navigation__item">
             <a href="#">главная</a>
           </li>
-          <li class="mobile-nav-list__item">
+          <li class="navigation__item">
             <a href="catalog.html">каталог продукции</a>
           </li>
-          <li class="mobile-nav-list__item">
+          <li class="navigation__item">
             <a href="#">подбор программы</a>
           </li>
         </ul>
@@ -34,53 +33,54 @@
   </header>
 
   <main class="main">
+    <h1 class="visually-hidden">Cat energy</h1>
     <section class="hero">
-      <h1 class="hero__title">Функциональноепитание для котов</h1>
-      <p class="hero__text">Занялся собой? Займись котом!</p>
-      <a class="hero__link main-button" href="#">подобрать программу</a>
+      <h2 class="hero__mobile-title">Функциональноепитание для котов</h2>
+      <p>Занялся собой? Займись котом!</p>
+      <a class="main-button" href="#">подобрать программу</a>
     </section>
 
     <section class="programs">
       <h2 class="visually-hidden">программы питания</h2>
-      <ul class="programs__list programs-list">
-        <li class="programs-list__item">
-          <h3 class="programs-title">Похудение</h3>
-          <p class="programs-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs-link" href="#">каталог slim</a>
+      <ul class="programs__list">
+        <li class="programs__item">
+          <h3>Похудение</h3>
+          <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a href="#">каталог slim</a>
         </li>
-        <li class="programs-list__item programs-item">
-          <h3 class="programs-item__title">Набор массы</h3>
-          <p class="programs-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs-item__link" href="#">каталог pro</a>
+        <li class="programs__item">
+          <h3>Набор массы</h3>
+          <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a href="#">каталог pro</a>
         </li>
       </ul>
     </section>
 
     <section class="advantages">
-      <h2 class="advantages__title section-title">Как это работает</h2>
-      <ul class="advantages__list advantages-list">
-        <li class="advantages-list__item">
+      <h2 class="section-title">Как это работает</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
           <p>
             Функциональное питание
             содержит только полезные
             питательные вещества.
           </p>
         </li>
-        <li class="advantages-list__item">
+        <li class="advantages__item">
           <p>
             Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.
           </p>
         </li>
-        <li class="advantages-list__item">
+        <li class="advantages__item">
           <p>
             Замените один-два приема
             обычной еды на наше
             функциональное питание.
           </p>
         </li>
-        <li class="advantages-list__item">
+        <li class="advantages__item">
           <p>
             Уже через месяц
             наслаждайтесь изменениями
@@ -91,14 +91,14 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title section-title">Живой пример</h2>
+      <h2 class="section-title">Живой пример</h2>
       <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="weight-time-wrapper">
-        <div class="weight-time-wrapper__weight">
+      <div class="example__weight-time-wrapper">
+        <div class="example__weight">
           <p>5 кг</p>
           <p>снижение веса</p>
         </div>
-        <div class="weight-time-wrapper__time">
+        <div class="example__time">
           <p>60 дней</p>
           <p>затрачено времени</p>
         </div>
@@ -117,10 +117,10 @@
   </main>
 
   <footer class="footer">
-    <img class="footer__footer-logo-label" src="images/footer-logo-label.svg" width="128" height="24" alt="надпись cat energy">
+    <img class="footer__logo-label" src="images/footer-logo-label.svg" width="128" height="24" alt="надпись cat energy">
     <div class="footer__socials">
-      <ul class="socials-list">
-        <li class="socials-list__item">
+      <ul class="footer__socials-list">
+        <li class="footer__item">
           <a href="#">
             <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>в контакте</title>
@@ -128,7 +128,7 @@
             </svg>
           </a>
         </li>
-        <li class="socials-list__item">
+        <li class="footer__item">
           <a href="#">
             <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>youtube</title>
@@ -136,7 +136,7 @@
             </svg>
           </a>
         </li>
-        <li class="socials-list__item">
+        <li class="footer__item">
           <a href="#">
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>telegram</title>
@@ -146,7 +146,7 @@
         </li>
       </ul>
     </div>
-    <div class="htmlacademy-links">
+    <div class="footer__htmlacademy-links">
       <a href="#">HTML Academy</a>
       <a href="#">
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
