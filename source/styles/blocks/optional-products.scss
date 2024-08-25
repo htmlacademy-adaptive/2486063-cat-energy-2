@@ -1,0 +1,19 @@
+.optional-products {
+  font-size: 14px;
+  line-height: 14px;
+
+  &h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: $text-color-black-second;
+    text-transform: uppercase;
+  }
+}
+
+.optional-products__promo p {
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-white;
+  background-color: #000000;
+}

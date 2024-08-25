@@ -1,0 +1,14 @@
+.main-button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-white;
+  background-color: $bg-color-main;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &--grey {
+    color: $text-collor-main;
+    background-color: $bg-color-grey;
+  }
+}
