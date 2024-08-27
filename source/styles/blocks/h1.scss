@@ -1,0 +1,10 @@
+.h1 {
+  font-family: $font-second;
+  font-size: 36px;
+  line-height: 36px;
+
+  &--white {
+    color: $text-color-white;
+    background-color: #000000;
+  }
+}
