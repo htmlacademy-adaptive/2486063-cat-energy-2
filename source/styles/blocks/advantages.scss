@@ -1,0 +1,27 @@
+.advantages__icon {
+  width: 60px;
+  height: 60px;
+  background-color: $bg-color-main;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__icon-leaf {
+  background-image: url("../../icons/stack.svg#advantages-leaf");
+  background-size: 25px 28px;
+}
+
+.advantages__icon-powder {
+  background-image: url("../../icons/stack.svg#advantages-powder");
+  background-size: 26px 28px;
+}
+
+.advantages__icon-eat {
+  background-image: url("../../icons/stack.svg#advantages-eat");
+  background-size: 25px 30px;
+}
+
+.advantages__icon-clock {
+  background-image: url("../../icons/stack.svg#advantages-clock");
+  background-size: 26px 31px;
+}

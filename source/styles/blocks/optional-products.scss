@@ -17,3 +17,19 @@
   color: $text-color-white;
   background-color: #000000;
 }
+
+.optional-products__icon-gift {
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/stack.svg#optional-gift");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+  background-color: #000000;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 82px;
+    background-size: 80px 82px;
+  }
+}
