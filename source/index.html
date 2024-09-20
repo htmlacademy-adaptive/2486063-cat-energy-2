@@ -41,27 +41,29 @@
   </header>
 
   <main>
-    <h1 class="h1 h1--white">Функциональноепитание для котов</h1>
+    <h1 class="visually-hidden">Cat energy</h1>
     <section class="hero">
-      <h2 class="visually-hidden">hero</h2>
-      <div class="image-background-filter">
+      <div class="hero__background image-background-filter"></div>
+      <picture>
+        <source media="(min-width: 1440px)" width="720" height="694" type="image/webp" srcset="images/hero-background-desktop@1x.webp, images/hero-background-desktop@2x.webp 2x">
+        <source media="(min-width: 1440px)" width="720" height="694" type="image/jpeg" srcset="images/hero-background-desktop@1x.jpg, images/hero-background-desktop@2x.jpg 2x">
+        <source width="320" height="302" type="image/webp" srcset="images/hero-background-mobile@1x.jpg, images/hero-background-mobile@2x.jpg 2x">
+        <img src="images/hero-background-mobile@1x.jpg" srcset="images/hero-background-mobile@2x.jpg 2x" width="320" height="302" alt="фон с фото кота">
+      </picture>
+      </div>
+      <h2 class="h1 h1--white">Функциональное питание для котов</h2>
+      <p>Занялся собой? Займись котом!</p>
+      <div class="hero__food-img">
         <picture>
-          <source media="(min-width: 1440px)" width="720" height="694" type="image/webp" srcset="images/hero-background-desktop@1x.webp, images/hero-background-desktop@2x.webp 2x">
-          <source media="(min-width: 1440px)" width="720" height="694" type="image/jpeg" srcset="images/hero-background-desktop@1x.jpg, images/hero-background-desktop@2x.jpg 2x">
-          <source width="320" height="302" type="image/webp" srcset="images/hero-background-mobile@1x.jpg, images/hero-background-mobile@2x.jpg 2x">
-          <img src="images/hero-background-mobile@1x.jpg" srcset="images/hero-background-mobile@2x.jpg 2x" width="320" height="302" alt="фон с фото кота">
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/hero-food-deskmob@1x.webp, images/hero-food-deskmob@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/hero-food-deskmob@1x.png, images/hero-food-deskmob@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/hero-food-tablet@1x.webp, images/hero-food-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/hero-food-tablet@1x.png, images/hero-food-tablet@2x.png 2x">
+          <source width="280" height="270" type="image/webp" srcset="images/hero-food-deskmob@1x.webp, images/hero-food-deskmob@2x.webp 2x">
+          <source width="280" height="270" type="image/png" srcset="images/hero-food-deskmob@1x.png, images/hero-food-deskmob@2x.png 2x">
+          <img src="images/hero-food-deskmob@1x.png" srcset="images/hero-food-deskmob@2x.png 2x" width="280" height="270" alt="Упаковка cat energy">
         </picture>
       </div>
-      <p>Занялся собой? Займись котом!</p>
-      <picture>
-        <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/hero-food-deskmob@1x.webp, images/hero-food-deskmob@2x.webp 2x">
-        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/hero-food-deskmob@1x.png, images/hero-food-deskmob@2x.png 2x">
-        <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/hero-food-tablet@1x.webp, images/hero-food-tablet@2x.webp 2x">
-        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/hero-food-tablet@1x.png, images/hero-food-tablet@2x.png 2x">
-        <source width="280" height="270" type="image/webp" srcset="images/hero-food-deskmob@1x.webp, images/hero-food-deskmob@2x.webp 2x">
-        <source width="280" height="270" type="image/png" srcset="images/hero-food-deskmob@1x.png, images/hero-food-deskmob@2x.png 2x">
-        <img src="images/hero-food-deskmob@1x.png" srcset="images/hero-food-deskmob@2x.png 2x" width="280" height="270" alt="Упаковка cat energy">
-      </picture>
       <a class="main-button" href="#">подобрать программу</a>
     </section>
 
@@ -70,7 +72,7 @@
       <ul class="programs__list">
         <li class="programs__item">
           <h3>Похудение</h3>
-          <div class="programms__picture-bg">
+          <div class="programs__picture-bg">
             <picture>
               <source media="(min-width: 1440px)" width="70" height="97" type="image/webp" srcset="images/programs-cat1@1x.webp, images/programs-cat1@2x.webp 2x">
               <source media="(min-width: 1440px)" width="70" height="97" type="image/png" srcset="images/programs-cat1@1x.png, images/programs-cat1@2x.png 2x">
@@ -86,7 +88,7 @@
         </li>
         <li class="programs__item">
           <h3>Набор массы</h3>
-          <div class="programms__picture-bg">
+          <div class="programs__picture-bg">
             <picture>
               <source media="(min-width: 1440px)" width="134" height="56" type="image/webp" srcset="images/programs-cat2@1x.webp, images/programs-cat2@2x.webp 2x">
               <source media="(min-width: 1440px)" width="134" height="56" type="image/png" srcset="images/programs-cat2@1x.png, images/programs-cat2@2x.png 2x">
@@ -150,26 +152,32 @@
     </section>
 
     <section class="example">
-      <h2 class="section-title">Живой пример</h2>
-      <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example__advantages">
-        <div class="example__border">
-          <p>5 кг</p>
-          <p>снижение веса</p>
-        </div>
-        <div class="example__border">
-          <p>60 дней</p>
-          <p>затрачено времени</p>
+      <div class="example__advantages-container">
+        <h2 class="section-title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__advantages-wrapper">
+          <div class="example__advantages">
+            <div class="example__border">
+              <p>5 кг</p>
+              <p>снижение веса</p>
+            </div>
+            <div class="example__border">
+              <p>60 дней</p>
+              <p>затрачено времени</p>
+            </div>
+          </div>
+          <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span></p>
         </div>
       </div>
-      <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-      <picture>
-        <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-cats@1x.webp, images/slider-cats@2x.webp 2x">
-        <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-cats@1x.png, images/slider-cats@2x.png 2x">
-        <source width="280" height="256" type="image/webp" srcset="images/slider-cats@1x.webp, images/slider-cats@2x.webp 2x">
-        <source width="280" height="256" type="image/png" srcset="images/slider-cats@1x.png, images/slider-cats@2x.png 2x">
-        <img src="images/slider-cats@1x.png" srcset="images/slider-cats@2x.png 2x" width="280" height="256" alt="слайдер с котами до и после">
-      </picture>
+      <div class="example__slider">
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-cats@1x.webp, images/slider-cats@2x.webp 2x">
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-cats@1x.png, images/slider-cats@2x.png 2x">
+          <source width="280" height="256" type="image/webp" srcset="images/slider-cats@1x.webp, images/slider-cats@2x.webp 2x">
+          <source width="280" height="256" type="image/png" srcset="images/slider-cats@1x.png, images/slider-cats@2x.png 2x">
+          <img src="images/slider-cats@1x.png" srcset="images/slider-cats@2x.png 2x" width="280" height="256" alt="слайдер с котами до и после">
+        </picture>
+      </div>
     </section>
 
     <section class="contacts">

@@ -1,3 +1,17 @@
+.example {
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__advantages-wrapper {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .example__border p:nth-child(1) {
   font-family: $font-second;
   font-size: 24px;
@@ -18,6 +32,14 @@
   font-family: $font-second;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
   color: $text-color-black;
   text-transform: uppercase;
+}
+
+.example__slider {
+  top: 0;
+  right: 0;
+  position: relative;
+  max-width: 560px;
 }
