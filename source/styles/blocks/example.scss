@@ -19,6 +19,7 @@
 .example__advantages {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 34px;
 }
 
 .example__advantages-wrapper {
@@ -29,13 +30,14 @@
 }
 
 .example__border {
+  position: relative;
   min-width: 124px;
   min-height: 56px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid $border-color-grey;
+  border: 1px solid #CDCDCD;
   border-radius: 4px;
 }
 
@@ -49,22 +51,29 @@
 }
 
 .example__border p:nth-child(2) {
-  font-family: $font-second;
+  font-family: $font-main;
   font-size: 12px;
   line-height: 12px;
   color: $text-collor-main;
   text-transform: lowercase;
   margin: 0;
+  text-align: center;
+  width: 87px;
+  padding: 0 15px;
+  background-color: $bg-color-grey;
+  position: absolute;
+  bottom: -16px;
 }
 
 .example__price {
+  text-align: center;
   font-family: $font-second;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
   color: $text-color-black;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 .example__slider {

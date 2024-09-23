@@ -1,3 +1,13 @@
+.address__wrapper {
+  display: flex;
+  padding: 26px 20px;
+  align-items: center;
+}
+
+.address__wrapper p {
+  margin: 0;
+}
+
 .contacts__welcome {
   font-family: $font-second;
   font-size: 16px;
@@ -11,4 +21,8 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+}
+
+.contacts img {
+  display: block;
 }
