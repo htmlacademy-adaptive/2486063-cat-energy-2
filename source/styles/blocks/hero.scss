@@ -3,15 +3,40 @@
   font-size: 14px;
   line-height: 14px;
   color: $text-color-white;
-  background-color: #000000;
   display: flex;
   flex-direction: column;
 }
 
 .hero__background {
   z-index: -999;
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+.hero h2 {
+  text-align: center;
+  margin-top: -303px;
+  padding: 27px 20px 25px;
+  margin-bottom: 0;
+}
+
+.hero p {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 20px 29px;
+  margin: 0;
 }
 
 .hero__food-img {
-  order: 5;
+  padding: 0 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 3px;
+}
+
+.hero a {
+  text-decoration: none;
+  margin: 0 20px 20px;
 }

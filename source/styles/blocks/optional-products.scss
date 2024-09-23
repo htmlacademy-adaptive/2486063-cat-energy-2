@@ -27,7 +27,7 @@
   background-color: #000000;
   background-position: center;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 80px;
     height: 82px;
     background-size: 80px 82px;

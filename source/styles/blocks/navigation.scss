@@ -1,7 +1,41 @@
 .navigation {
-  & a {
-    color: $text-color-black;
-    text-transform: uppercase;
-    text-decoration: none;
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.navigation a {
+  color: $text-color-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
+  }
+}
+
+.navigation__item {
+  text-align: center;
+  padding: 22px 20px 24px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media screen and (min-width: $tablet-width) {
+    border-bottom: 2px solid $bg-color-main;
   }
 }
