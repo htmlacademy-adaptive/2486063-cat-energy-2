@@ -5,6 +5,10 @@
   color: $text-color-white;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .hero__background {
@@ -12,6 +16,10 @@
   position: relative;
   top: auto;
   left: auto;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .hero h2 {
@@ -19,6 +27,14 @@
   margin-top: -303px;
   padding: 27px 20px 25px;
   margin-bottom: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    text-align: left;
+    color: $text-color-black;
+    max-width: 420px;
+    padding: 0;
+    margin: 50px 0 40px 110px;
+  }
 }
 
 .hero p {
@@ -26,6 +42,18 @@
   text-align: center;
   padding: 0 20px 29px;
   margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    width: 340px;
+    margin-left: 110px;
+    padding: 0;
+    margin-bottom: 50px;
+    max-width: 340px;
+    color: $text-color-black;
+  }
 }
 
 .hero__food-img {
@@ -34,9 +62,23 @@
   width: 100%;
   object-fit: cover;
   margin-bottom: 3px;
+
+  @media screen and (min-width: $tablet-width) {
+    order: 1;
+    margin-top: -100px;
+    z-index: -999;
+  }
 }
 
 .hero a {
+  font-size: 20px;
+  line-height: 26px;
   text-decoration: none;
   margin: 0 20px 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 16px 25px;
+    width: 242px;
+    margin-left: 110px;
+  }
 }

@@ -2,6 +2,12 @@
   display: flex;
   padding: 26px 20px;
   align-items: center;
+  gap: 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 60px 70px;
+    justify-content: space-between;
+  }
 }
 
 .address__wrapper p {
@@ -12,15 +18,30 @@
   font-family: $font-second;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 400;
   color: $text-color-black;
   text-transform: uppercase;
+  width: 130px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
 }
 
 .contacts__address {
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+  width: 140px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 157px;
+    text-align: right;
+  }
 }
 
 .contacts img {

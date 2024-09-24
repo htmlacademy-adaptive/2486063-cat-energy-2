@@ -55,7 +55,7 @@
       <nav class="navigation navigation--opened">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#">главная</a>
+            <a href="index.html">главная</a>
           </li>
           <li class="navigation__item navigation__item--active">
             <a href="catalog.html">каталог продукции</a>
@@ -716,7 +716,9 @@
             id="email"
             name="email"
             value="KUKLACHEV@GMAIL.COM"
-            required/>
+            required
+          />
+          <label class="visually-hidden" for="email">Электронная почта</label>
           <button class="main-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -798,7 +800,7 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__logo-link" href="index.html">
+      <a class="footer__logo-link" href="#">
         <img
           class="footer__logo-label"
           src="images/logo-label.svg"
@@ -807,25 +809,23 @@
           alt="надпись cat energy"
         />
       </a>
-      <div class="footer__socials">
-        <ul class="footer__socials-list">
-          <li class="footer__item">
-            <a class="footer__social-link-vk" href="#">
-              <span class="visually-hidden">в контакте</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__social-link-yt" href="#">
-              <span class="visually-hidden">youtube</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__social-link-tg" href="#">
-              <span class="visually-hidden">telegram</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer__socials-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link-vk" href="#">
+            <span class="visually-hidden">в контакте</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link-yt" href="#">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link-tg" href="#">
+            <span class="visually-hidden">telegram</span>
+          </a>
+        </li>
+      </ul>
       <div class="footer__htmlacademy-links">
         <a
           class="footer__link-html-academy"
@@ -840,4 +840,6 @@
       </div>
     </footer>
   </body>
+
+  <script src="script.js" async></script>
 </html>

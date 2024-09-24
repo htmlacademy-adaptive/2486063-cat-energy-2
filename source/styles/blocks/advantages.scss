@@ -1,5 +1,9 @@
 .advantages h2 {
   margin: 0 20px 40px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 30px 32px;
+  }
 }
 
 .advantages__list {
@@ -8,8 +12,22 @@
   list-style: none;
 
   @media screen and (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+    margin: 0 30px 92px;
+    gap: 33px 140px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: $tablet-width;
+      height: 1px;
+      background-color: #e6e6e6;
+      bottom: -47px;
+      left: -30px;
+    }
   }
 }
 
@@ -17,9 +35,39 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  counter-increment: advantages-counter;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @media screen and (max-width: $mobile-width-only) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    width: 245px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+    padding: 40px 0 63px;
+
+    &::before {
+      content: counter(advantages-counter);
+      font-family: $font-second;
+      position: absolute;
+      font-size: 280px;
+      z-index: -1;
+      color: $bg-color-grey;
+      top: 48%;
+      right: 0;
+    }
+  }
+}
+
+.advantages__item p {
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -29,6 +77,11 @@
   background-color: $bg-color-main;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .advantages__icon-leaf {

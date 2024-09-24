@@ -2,6 +2,24 @@
   padding: 25px 20px 40px;
   background-color: $bg-color-grey;
 
+  @media screen and (min-width: $tablet-width) {
+    background: none;
+    position: relative;
+    padding: 0 0 101px;
+
+    &::before {
+      content: '';
+      z-index: -999;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $bg-color-grey;
+      clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+    }
+  }
+
   @media screen and (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
@@ -9,23 +27,36 @@
 }
 
 .example h2 {
-  margin-bottom: 40px;
+  margin: 0 30px 60px;
 }
 
 .example__description {
   margin: 0 0 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 30px 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__advantages-wrapper {
+  @media screen and (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px 99px;
+  }
 }
 
 .example__advantages {
   display: flex;
   justify-content: space-between;
   margin-bottom: 34px;
-}
 
-.example__advantages-wrapper {
-  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+    gap: 43px;
   }
 }
 
@@ -39,6 +70,11 @@
   justify-content: center;
   border: 1px solid #CDCDCD;
   border-radius: 4px;
+
+  @media screen and (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 77px;
+  }
 }
 
 .example__border p:nth-child(1) {
@@ -48,6 +84,11 @@
   color: $text-color-black;
   text-transform: uppercase;
   margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__border p:nth-child(2) {
@@ -63,6 +104,12 @@
   background-color: $bg-color-grey;
   position: absolute;
   bottom: -16px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
 }
 
 .example__price {
@@ -70,10 +117,18 @@
   font-family: $font-second;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 400;
   color: $text-color-black;
   text-transform: uppercase;
   margin: 0 0 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    text-align: right;
+    width: 174px;
+  }
 }
 
 .example__slider {
@@ -81,4 +136,5 @@
   right: 0;
   position: relative;
   max-width: 560px;
+  margin: 0 auto;
 }

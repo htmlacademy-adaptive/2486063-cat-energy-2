@@ -52,7 +52,7 @@
           aria-label="открыть меню"
         ></button>
       </div>
-      <nav class="navigation navigation--opened">
+      <nav class="navigation navigation--opened navigation--no-js">
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--active">
             <a href="#">главная</a>
@@ -460,7 +460,10 @@
       <section class="contacts">
         <h2 class="visually-hidden">контакты</h2>
         <div class="address__wrapper">
-          <p class="contacts__welcome">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__welcome">
+            приглашаем <br />
+            к сотрудничеству дилеров!
+          </p>
           <address class="contacts__address">
             <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </address>
@@ -545,25 +548,23 @@
           alt="надпись cat energy"
         />
       </a>
-      <div class="footer__socials">
-        <ul class="footer__socials-list">
-          <li class="footer__item">
-            <a class="footer__social-link-vk" href="#">
-              <span class="visually-hidden">в контакте</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__social-link-yt" href="#">
-              <span class="visually-hidden">youtube</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__social-link-tg" href="#">
-              <span class="visually-hidden">telegram</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer__socials-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link-vk" href="#">
+            <span class="visually-hidden">в контакте</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link-yt" href="#">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link-tg" href="#">
+            <span class="visually-hidden">telegram</span>
+          </a>
+        </li>
+      </ul>
       <div class="footer__htmlacademy-links">
         <a
           class="footer__link-html-academy"
@@ -577,5 +578,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,26 +1,31 @@
 .programs {
-  & h3 {
-    font-family: $font-second;
-    font-size: 24px;
-    line-height: 37px;
-    color: $text-color-black;
-    text-transform: uppercase;
-  }
+
 }
 
 .programs__list {
   padding: 0;
-  margin: 0 20px;
+  margin: 0 20px 20px;
   list-style: none;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 30px 45px;
+  }
 
   @media screen and (min-width: $desktop-width) {
     display: flex;
+    gap: 60px;
   }
 }
 
 .programs__item {
   background-color: $bg-color-grey;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 77px 63px 53px 52px;
+  }
 }
 
 .programs__item-wrapper {
@@ -28,6 +33,11 @@
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .programs__picture-bg {
@@ -40,20 +50,44 @@
   align-items: center;
 
   @media screen and (min-width: $tablet-width) {
+    position: absolute;
+    right: 63px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 200px;
     height: 200px;
   }
 }
 
 .programs h3 {
+  font-family: $font-second;
+  font-size: 24px;
+  line-height: 37px;
+  color: $text-color-black;
+  text-transform: uppercase;
   margin: 0;
   order: 1;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs__item p {
   margin: 0 20px;
   padding-bottom: 23px;
   border-bottom: 1px solid #e6e6e6;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 340px;
+    margin: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 48px;
+  }
 }
 
 .programs__item a {
@@ -66,7 +100,7 @@
   color: $text-color-black;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 20px 18px;
+  margin: 15px 20px 0;
 
   &::after {
     content: "";
@@ -78,5 +112,12 @@
     mask-repeat: no-repeat;
     mask-size: 24px 12px;
     mask-position: 100%;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    gap: 25px;
   }
 }

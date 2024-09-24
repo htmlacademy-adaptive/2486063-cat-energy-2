@@ -3,8 +3,13 @@
   font-size: 20px;
   line-height: 20px;
 
+
   @media screen and (min-width: $tablet-width) {
-    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 25px 30px 0;
     font-size: 18px;
     line-height: 24px;
   }
@@ -15,14 +20,25 @@
   justify-content: space-between;
   align-items: center;
   padding: 14px 20px;
-  border-bottom: 1px solid #e6e6e6;
 
   @media screen and (min-width: $tablet-width) {
     border-bottom: none;
   }
 }
 
+.header__link picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header__logo-label {
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__toggle {
   @media screen and (min-width: $tablet-width) {
     display: none;
   }
@@ -61,5 +77,16 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+.header:has(.navigation__non-js) {
+  .header__toggle {
+    display: none;
+  }
+
+  .header__wrapper {
+    gap: 56px;
+    justify-content: start;
   }
 }
