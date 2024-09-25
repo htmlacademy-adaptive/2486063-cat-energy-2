@@ -1,7 +1,3 @@
-.programs {
-
-}
-
 .programs__list {
   padding: 0;
   margin: 0 20px 20px;
@@ -13,18 +9,27 @@
 
   @media screen and (min-width: $desktop-width) {
     display: flex;
-    gap: 60px;
+    gap: 80px;
+    margin: 0 110px 71px;
   }
 }
 
 .programs__item {
   background-color: $bg-color-grey;
   padding-bottom: 20px;
+  width: 100%;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     position: relative;
-    margin-bottom: 30px;
     padding: 77px 63px 53px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 47px 61px 55px 52px;
   }
 }
 
@@ -38,6 +43,11 @@
     padding: 0;
     margin-bottom: 24px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    gap: 62px;
+    margin-bottom: 39px;
+  }
 }
 
 .programs__picture-bg {
@@ -49,13 +59,19 @@
   background-color: $bg-color-main;
   align-items: center;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     position: absolute;
     right: 63px;
     top: 50%;
     transform: translateY(-50%);
     width: 200px;
     height: 200px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    right: 50px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -83,10 +99,14 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 340px;
-    margin: 0;
+    margin: 0 0 48px;
     padding-bottom: 0;
     border-bottom: none;
-    margin-bottom: 48px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 457px;
+    margin-bottom: 23px;
   }
 }
 

@@ -3,6 +3,11 @@
   font-size: 36px;
   line-height: 36px;
 
+  @media screen and (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   &--white {
     color: $text-color-white;
   }

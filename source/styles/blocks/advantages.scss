@@ -4,6 +4,10 @@
   @media screen and (min-width: $tablet-width) {
     margin: 0 30px 32px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 110px 32px;
+  }
 }
 
 .advantages__list {
@@ -11,7 +15,7 @@
   margin: 0 20px 49px;
   list-style: none;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width){
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -19,15 +23,22 @@
     margin: 0 30px 92px;
     gap: 33px 140px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: $tablet-width;
-      height: 1px;
-      background-color: #e6e6e6;
-      bottom: -47px;
-      left: -30px;
+    @media screen and (max-width: $tablet-width-only) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: $tablet-width;
+        height: 1px;
+        background-color: #e6e6e6;
+        bottom: -47px;
+        left: -30px;
+      }
     }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    gap:94px;
+    margin: 0 110px 69px;
   }
 }
 
@@ -45,11 +56,11 @@
 
   @media screen and (min-width: $tablet-width) {
     position: relative;
-    width: 245px;
+    width: 234px;
     flex-direction: column;
     align-items: flex-start;
     gap: 31px;
-    padding: 40px 0 63px;
+    padding: 40px 0 57px;
 
     &::before {
       content: counter(advantages-counter);
