@@ -6,10 +6,19 @@
   padding: 40px 20px;
   background-color: $bg-color-grey;
 
+  @media screen and (max-width: $mobile-width-only) {
+    gap: 40px;
+
+  }
+
   @media screen and (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     padding: 55px 30px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 66px 110px;
   }
 }
 

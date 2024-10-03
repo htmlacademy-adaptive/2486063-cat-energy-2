@@ -6,7 +6,6 @@
   display: flex;
   padding: 26px 20px;
   align-items: center;
-  gap: 30px;
 
   @media screen and (min-width: $tablet-width) {
     padding: 60px 70px;
@@ -19,6 +18,7 @@
     background-color: #ffffff;
     top: 95px;
     left: 110px;
+    gap: 87px;
   }
 }
 
@@ -33,12 +33,12 @@
   font-weight: 400;
   color: $text-color-black;
   text-transform: uppercase;
-  width: 130px;
+  width: 100%;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
-    width: 163px;
+    max-width: 163px;
   }
 }
 
@@ -46,19 +46,20 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
-  width: 140px;
+  width: auto;
 
   @media screen and (min-width: $tablet-width) {
     position: relative;
     font-size: 16px;
     line-height: 20px;
-    width: 157px;
     text-align: right;
     top: -20px;
+    max-width: 157px;
   }
 }
 
 .contacts__city {
+
   @media screen and (min-width: $tablet-width) {
     position: absolute;
     bottom: -40px;

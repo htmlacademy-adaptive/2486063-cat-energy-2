@@ -7,6 +7,14 @@
     width: $mobile-width;
     z-index: 10;
     background-color: #ffffff;
+
+    &--opened {
+      display: block;
+    }
+
+    &--closed {
+      display: none;
+    }
   }
 
   @media screen and (min-width: $tablet-width) {

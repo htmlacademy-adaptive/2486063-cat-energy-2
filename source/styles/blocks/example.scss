@@ -177,5 +177,43 @@
   right: 0;
   position: relative;
   max-width: 560px;
+  height: 100%;
   margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: #666666;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    border-radius: 2px;
+  }
+}
+
+.example__slider-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -55%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  background-color: #ffffff;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#slider-arrows");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #666666;
+  }
 }

@@ -19,6 +19,12 @@
   padding-bottom: 20px;
   width: 100%;
 
+  @media screen and (max-width: $mobile-width-only) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
   @media screen and (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     position: relative;
     padding: 77px 63px 53px 52px;

@@ -5,11 +5,16 @@
   color: $text-color-white;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $desktop-width) {
+    min-height: 600px;
+    position: relative;
+  }
 }
 
 .hero__bg-wrapper {
   @media screen and (min-width: $desktop-width) {
-    top: 0;
+    top: -142px;
     left: 50%;
   }
 }
@@ -43,7 +48,7 @@
     color: $text-color-black;
     max-width: 420px;
     padding: 0;
-    margin: 50px 0 40px 120px;
+    margin: 50px 0 40px 190px;
   }
 }
 
@@ -58,9 +63,8 @@
     font-size: 20px;
     line-height: 20px;
     width: 340px;
-    margin-left: 110px;
+    margin: 0 0 50px 190px;
     padding: 0;
-    margin-bottom: 50px;
     max-width: 340px;
     color: $text-color-black;
   }
@@ -81,6 +85,10 @@
     margin: 0;
     padding: 0;
     z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-29%, -54%);
   }
 }
 
@@ -93,6 +101,6 @@
   @media screen and (min-width: $tablet-width) {
     padding: 16px 25px;
     width: 242px;
-    margin-left: 110px;
+    margin-left: 190px;
   }
 }

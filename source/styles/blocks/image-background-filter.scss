@@ -1,5 +1,6 @@
 .image-background-filter {
   position: absolute;
+  pointer-events: none;
 
   &::before {
     content: "";
