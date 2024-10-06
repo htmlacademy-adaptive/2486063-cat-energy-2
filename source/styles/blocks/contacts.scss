@@ -20,6 +20,12 @@
     left: 110px;
     gap: 87px;
   }
+
+  &--bg-grey {
+    @media screen and (max-width: $tablet-width-only) {
+      background-color: $bg-color-gray;
+    }
+  }
 }
 
 .address__wrapper p {
@@ -48,6 +54,10 @@
   font-style: normal;
   width: auto;
 
+  @media screen and (max-width: $mobile-width-only) {
+    margin-right: -29px;
+  }
+
   @media screen and (min-width: $tablet-width) {
     position: relative;
     font-size: 16px;
@@ -56,14 +66,21 @@
     top: -20px;
     max-width: 157px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .contacts__city {
-
   @media screen and (min-width: $tablet-width) {
     position: absolute;
     bottom: -40px;
     right: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    left: 0;
   }
 }
 

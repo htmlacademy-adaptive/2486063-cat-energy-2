@@ -9,9 +9,15 @@
   text-align: center;
   padding: 10px 20px;
   border: none;
+  cursor: pointer;
 
-  &--grey {
-    color: $text-collor-main;
-    background-color: $bg-color-grey;
+  &--gray {
+    color: $text-color-main;
+    background-color: $bg-color-gray;
+  }
+
+  &--bigger-font {
+    font-size: 20px;
+    line-height: 26px;
   }
 }

@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     justify-content: start;
     margin: 0 30px 92px;
-    gap: 33px 140px;
+    gap: 38px 139px;
 
     @media screen and (max-width: $tablet-width-only) {
       &::after {
@@ -37,7 +37,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    gap:94px;
+    gap: 80px;
     margin: 0 110px 69px;
   }
 }
@@ -56,7 +56,7 @@
 
   @media screen and (min-width: $tablet-width) {
     position: relative;
-    width: 234px;
+    width: 245px;
     flex-direction: column;
     align-items: flex-start;
     gap: 31px;
@@ -68,7 +68,7 @@
       position: absolute;
       font-size: 280px;
       z-index: -1;
-      color: $bg-color-grey;
+      color: $bg-color-gray;
       top: 48%;
       right: 0;
     }

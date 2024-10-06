@@ -27,6 +27,12 @@
   }
 }
 
+.page__index .navigation {
+  @media screen and (min-width: $desktop-width) {
+    max-width: 560px;
+  }
+}
+
 .navigation a {
   color: $text-color-black;
   text-transform: uppercase;
@@ -34,7 +40,6 @@
 
   @media screen and (min-width: $desktop-width) {
     font-size: 20px;
-    color: $text-color-white;
   }
 }
 
@@ -45,8 +50,19 @@
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     gap: 33px;
+    flex-wrap: wrap;
+    margin-right: 6px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+
+  &--white-text a{
+    @media screen and (min-width: $desktop-width) {
+      color: $text-color-white;
+    }
   }
 }
 
@@ -85,7 +101,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    &--active {
+    .navigation:has(.navigation__list--white-text) &--active {
       &::before{
         background-color: #ffffff;
       }

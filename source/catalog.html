@@ -42,7 +42,7 @@
         <img
           class="header__logo-label"
           width="101"
-          height="18"
+          height="20"
           src="images/logo-label.svg"
           alt="надпись cat energy"
         />
@@ -52,7 +52,7 @@
           aria-label="открыть меню"
         ></button>
       </div>
-      <nav class="navigation navigation--opened">
+      <nav class="navigation navigation--closed">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="index.html">главная</a>
@@ -297,7 +297,7 @@
             <button class="main-button" type="button">заказать</button>
           </li>
           <li class="catalog__item product-card">
-            <h3>Cat Energy PRO 500 г</h3>
+            <h3>Cat Energy PRO 1000 г</h3>
             <div class="product-card__img-wrapper">
               <picture>
                 <source
@@ -611,7 +611,7 @@
           <li class="catalog__item">
             <h3>Показать еще 100500 товаров</h3>
             <p>На самом деле вкусов гораздо больше!</p>
-            <button class="main-button main-button--grey" type="button">
+            <button class="main-button main-button--gray" type="button">
               показать все
             </button>
           </li>
@@ -619,138 +619,157 @@
       </section>
 
       <section class="optional-products">
-        <h2 class="section-title section-title--catalog">Дополнительные товары</h2>
-        <ul class="optional-products__list">
-          <li class="optional-products__item">
-            <h3>Сахарозаменитель</h3>
-            <div class="optional-products__wrapper">
-              <p>1 упаковка (100 г)</p>
-              <p>200 ₽</p>
+        <div class="section-title-catalog">
+          <h2>
+            Дополнительные товары
+          </h2>
+        </div>
+        <div class="optional-products__content-wrapper">
+          <ul class="optional-products__list">
+            <li class="optional-products__item">
+              <h3>Сахарозаменитель</h3>
+              <div class="optional-products__wrapper">
+                <p>1 упаковка (100 г)</p>
+                <p>200 ₽</p>
+              </div>
+              <button class="main-button" type="button">заказать</button>
+            </li>
+            <li class="optional-products__item">
+              <h3 class="optional-products__title">питьевая вода</h3>
+              <div class="optional-products__wrapper">
+                <p>5 литров</p>
+                <p>50 ₽</p>
+              </div>
+              <button class="main-button" type="button">заказать</button>
+            </li>
+            <li class="optional-products__item">
+              <h3 class="optional-products__title">молоко</h3>
+              <div class="optional-products__wrapper">
+                <p>1 литр</p>
+                <p>100 ₽</p>
+              </div>
+              <button class="main-button" type="button">заказать</button>
+            </li>
+            <li class="optional-products__item">
+              <h3 class="optional-products__title">витамины</h3>
+              <div class="optional-products__wrapper">
+                <p>1 упаковка (30 г)</p>
+                <p>300 ₽</p>
+              </div>
+              <button class="main-button" type="button">заказать</button>
+            </li>
+          </ul>
+          <div class="optional-products__promo">
+            <div class="image-background-filter">
+              <div class="optional-products__promo-background">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    width="245"
+                    height="288"
+                    type="image/webp"
+                    srcset="
+                      images/optional-background-desktop@1x.webp,
+                      images/optional-background-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    width="245"
+                    height="288"
+                    type="image/jpeg"
+                    srcset="
+                      images/optional-background-desktop@1x.jpg,
+                      images/optional-background-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    width="708"
+                    height="200"
+                    type="image/webp"
+                    srcset="
+                      images/optional-background-tablet@1x.webp,
+                      images/optional-background-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    width="708"
+                    height="200"
+                    type="image/jpeg"
+                    srcset="
+                      images/optional-background-tablet@1x.jpg,
+                      images/optional-background-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    width="280"
+                    height="290"
+                    type="image/webp"
+                    srcset="
+                      images/optional-background-mobile@1x.jpg,
+                      images/optional-background-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="images/optional-background-mobile@1x.jpg"
+                    srcset="images/optional-background-mobile@2x.jpg 2x"
+                    width="280"
+                    height="290"
+                    alt="фон кот в рюкзаке"
+                  />
+                </picture>
+              </div>
             </div>
-            <button class="main-button" type="button">заказать</button>
-          </li>
-          <li class="optional-products__item">
-            <h3 class="optional-products__title">питьевая вода</h3>
-            <div class="optional-products__wrapper">
-              <p>5 литров</p>
-              <p>50 ₽</p>
+            <div class="optional-products__icon-gift">
+              <span class="visually-hidden">иконка подарка</span>
             </div>
-            <button class="main-button" type="button">заказать</button>
-          </li>
-          <li class="optional-products__item">
-            <h3 class="optional-products__title">молоко</h3>
-            <div class="optional-products__wrapper">
-              <p>1 литр</p>
-              <p>100 ₽</p>
-            </div>
-            <button class="main-button" type="button">заказать</button>
-          </li>
-          <li class="optional-products__item">
-            <h3 class="optional-products__title">витамины</h3>
-            <div class="optional-products__wrapper">
-              <p>1 упаковка (30 г)</p>
-              <p>300 ₽</p>
-            </div>
-            <button class="main-button" type="button">заказать</button>
-          </li>
-        </ul>
-        <div class="optional-products__promo">
-          <div class="image-background-filter">
-            <div class="optional-products__promo-background">
-              <picture>
-                <source
-                  media="(min-width: 1440px)"
-                  width="245"
-                  height="288"
-                  type="image/webp"
-                  srcset="
-                    images/optional-background-desktop@1x.webp,
-                    images/optional-background-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  width="245"
-                  height="288"
-                  type="image/jpeg"
-                  srcset="
-                    images/optional-background-desktop@1x.jpg,
-                    images/optional-background-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  width="708"
-                  height="200"
-                  type="image/webp"
-                  srcset="
-                    images/optional-background-tablet@1x.webp,
-                    images/optional-background-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  width="708"
-                  height="200"
-                  type="image/jpeg"
-                  srcset="
-                    images/optional-background-tablet@1x.jpg,
-                    images/optional-background-tablet@2x.jpg 2x
-                  "
-                />
-                <source
-                  width="280"
-                  height="290"
-                  type="image/webp"
-                  srcset="
-                    images/optional-background-mobile@1x.jpg,
-                    images/optional-background-mobile@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="images/optional-background-mobile@1x.jpg"
-                  srcset="images/optional-background-mobile@2x.jpg 2x"
-                  width="280"
-                  height="290"
-                  alt="фон кот в рюкзаке"
-                />
-              </picture>
-            </div>
+            <p>Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
           </div>
-          <div class="optional-products__icon-gift">
-            <span class="visually-hidden">иконка подарка</span>
-          </div>
-          <p>Закажите все <br />и получите чехол для кота в подарок!</p>
         </div>
       </section>
 
       <section class="subcribe">
-        <h2 class="section-title section-title--catalog">Акции и новинки</h2>
-        <p>
-          Подпишитесь на наши новости и не пропустите ни одного предложения!
-        </p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value="KUKLACHEV@GMAIL.COM"
-            required
-          />
-          <label class="visually-hidden" for="email">Электронная почта</label>
-          <button class="main-button" type="submit">Подписаться</button>
-        </form>
+        <div class="section-title-catalog">
+          <h2>Акции и новинки</h2>
+        </div>
+        <div class="subcribe__form-wrapper">
+          <p>
+            Подпишитесь на наши новости и не пропустите ни одного предложения!
+          </p>
+          <form
+            class="subcribe__form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+          >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="KUKLACHEV@GMAIL.COM"
+              required
+            />
+            <label class="visually-hidden" for="email">Электронная почта</label>
+            <button class="main-button main-button--bigger-font" type="submit">
+              Подписаться
+            </button>
+          </form>
+        </div>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">контакты</h2>
-        <div class="address__wrapper">
+        <div class="address__wrapper address__wrapper--bg-grey">
           <p class="contacts__welcome">
             приглашаем <br />
             к сотрудничеству дилеров!
           </p>
           <address class="contacts__address">
-            <p>ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+            <p>
+              ул. Большая Конюшенная, д. 19/8
+              <span class="contacts__city">Санкт-Петербург</span>
+            </p>
           </address>
         </div>
         <picture>
