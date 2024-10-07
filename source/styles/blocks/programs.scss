@@ -126,7 +126,7 @@
   }
 }
 
-.programs__item a {
+.programs__link {
   display: flex;
   gap: 15px;
   align-items: center;
@@ -155,5 +155,10 @@
     line-height: 30px;
     margin: 0;
     gap: 25px;
+  }
+
+  &:active {
+    transition: opacity 0.3s ease;
+    opacity: 0.3;
   }
 }

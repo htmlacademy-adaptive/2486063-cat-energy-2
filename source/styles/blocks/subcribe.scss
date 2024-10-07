@@ -62,13 +62,13 @@
   font-family: $font-second;
   font-size: 20px;
   line-height: 30px;
-  padding: 13px;
+  padding: 12px;
   color: $text-color-main;
   border: 1px solid #cdcdcd;
   width: 100%;
 
-  @media screen and (min-width: $tablet-width) {
-
+  &:hover {
+    border-color: #cdcdcd;
   }
 }
 

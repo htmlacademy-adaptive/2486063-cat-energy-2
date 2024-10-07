@@ -36,6 +36,18 @@
   }
 }
 
+.header__link {
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .header__link picture {
   display: flex;
   align-items: center;

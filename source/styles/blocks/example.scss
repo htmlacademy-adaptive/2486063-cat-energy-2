@@ -1,5 +1,5 @@
 .example {
-  padding: 25px 20px 40px;
+  padding: 25px 20px 37px;
   background-color: $bg-color-gray;
 
   @media screen and (min-width: $tablet-width) {
@@ -187,15 +187,40 @@
   height: 100%;
   margin: 0 auto;
 
-  &::before {
-    content: '';
-    position: absolute;
-    background-color: #666666;
-    top: 0;
-    left: 50%;
-    width: 4px;
-    height: 100%;
-    border-radius: 2px;
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   background-color: #666666;
+  //   top: 0;
+  //   left: 50%;
+  //   width: 4px;
+  //   height: 100%;
+  //   border-radius: 2px;
+  // }
+}
+
+.example__slider-button-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -55%);
+
+  &:hover .example__slider-button{
+    border-color: $bg-color-main;
+  }
+
+  &:hover .example__slider-button::before,
+  &:hover .example__slider-button::after {
+    background-color: $bg-color-main;
+  }
+
+  &:active .example__slider-button {
+    border-color: rgba($color: $bg-color-main, $alpha: 0.6);
+  }
+
+  &:active .example__slider-button::before,
+  &:active .example__slider-button::after {
+    background-color: rgba($color: $bg-color-main, $alpha: 0.6);
   }
 }
 
@@ -209,6 +234,7 @@
   border-radius: 50%;
   border: 2px solid #666666;
   background-color: #ffffff;
+  cursor: pointer;
 
   &::before {
     content: '';
@@ -222,5 +248,22 @@
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: #666666;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #666666;
+    top: -110;
+    left: 50%;
+    width: 4px;
+    height: 256px;
+    border-radius: 2px;
+    transform: translateX(-50%);
+
+    @media screen and (min-width: $tablet-width) {
+      height: 511px;
+      top: -237px
+    }
   }
 }

@@ -20,4 +20,14 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  &:hover {
+    transition: background-color 0.3s ease;
+    background-color: #5EAA2F;
+  }
+
+  &:active {
+    transition: color 0.3s ease;
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }

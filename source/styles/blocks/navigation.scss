@@ -41,6 +41,16 @@
   @media screen and (min-width: $desktop-width) {
     font-size: 20px;
   }
+
+  &:hover {
+    transition: opacity 0.3s ease;
+    opacity: 0.6;
+  }
+
+  &:active {
+    transition: opacity 0.3s ease;
+    opacity: 0.3;
+  }
 }
 
 .navigation__list {
