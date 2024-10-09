@@ -137,17 +137,29 @@
   text-transform: uppercase;
   text-decoration: none;
   margin: 17px 20px 0;
+  min-width: 133px;
 
-  &::after {
+  div {
+    position: relative;
+    display: flex;
+    align-items: center;
     content: "";
-    display: block;
-    width: 24px;
-    height: 12px;
+    width: 18px;
+    height: 2px;
     background-color: #000000;
-    mask-image: url("../../icons/stack.svg#arrow");
-    mask-repeat: no-repeat;
-    mask-size: 24px 12px;
-    mask-position: 100%;
+    transition: width 0.3s ease;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 12px;
+      background-color: #000000;
+      mask-image: url("../../icons/stack.svg#programs-arrow");
+      mask-repeat: no-repeat;
+      position: absolute;
+      right: -6px;
+    }
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -155,6 +167,11 @@
     line-height: 30px;
     margin: 0;
     gap: 25px;
+    min-width: 161px;
+  }
+
+  &:hover div{
+    width: 26px;
   }
 
   &:active {
