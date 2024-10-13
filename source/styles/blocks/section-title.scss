@@ -1,0 +1,13 @@
+.section-title {
+  font-family: $font-second;
+  font-size: 36px;
+  line-height: 40px;
+  color: $text-color-black;
+  margin: 0;
+  position: relative;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

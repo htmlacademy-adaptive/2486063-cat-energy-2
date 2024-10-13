@@ -1,0 +1,43 @@
+.main-button {
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-white;
+  background-color: $bg-color-main;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+
+  &--bigger-font {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &:hover {
+    transition: background-color 0.3s ease;
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    transition: color 0.3s ease;
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+
+  &--gray {
+    color: $text-color-main;
+    background-color: $bg-color-gray;
+
+    &:hover {
+      transition: background-color 0.3s ease;
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      transition: color 0.3s ease;
+      color: $text-color-main;
+    }
+  }
+}

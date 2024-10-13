@@ -32,10 +32,10 @@
 .hero {
   background-image:
     image-set(
-      url("../../images/hero@1x.webp") 1x type("image/webp"),
-      url("../../images/hero@2x.webp") 2x type("image/webp"),
-      url("../../images/hero@1x.jpg") 1x type("image/jpeg"),
-      url("../../images/hero@2x.jpg") 2x type("image/jpeg")
+      url("../../images/hero/hero@1x.webp") 1x type("image/webp"),
+      url("../../images/hero/hero@2x.webp") 2x type("image/webp"),
+      url("../../images/hero/hero@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/hero/hero@2x.jpg") 2x type("image/jpeg")
     );
 }
 ```
@@ -46,10 +46,10 @@
 .hero {
   background-image:
     image-set(
-      url("../images/hero@1x.webp") 1x type("image/webp"),
-      url("../images/hero@2x.webp") 2x type("image/webp"),
-      url("../images/hero@1x.jpg") 1x type("image/jpeg"),
-      url("../images/hero@2x.jpg") 2x type("image/jpeg")
+      url("../images/hero/hero@1x.webp") 1x type("image/webp"),
+      url("../images/hero/hero@2x.webp") 2x type("image/webp"),
+      url("../images/hero/hero@1x.jpg") 1x type("image/jpeg"),
+      url("../images/hero/hero@2x.jpg") 2x type("image/jpeg")
     );
 }
 ```

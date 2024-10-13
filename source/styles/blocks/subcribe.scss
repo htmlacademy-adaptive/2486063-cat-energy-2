@@ -1,0 +1,82 @@
+.subcribe__fieldset p {
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $text-color-black;
+}
+
+.subcribe__form-wrapper {
+  margin: 0 20px 42px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 30px 80px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 110px 104px;
+  }
+}
+
+.subcribe__form-wrapper p {
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color-black;
+  margin: 29px 0 21px;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 63px auto 22px;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 520px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 660px;
+    margin: 72px auto 24px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subcribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    margin: 0 38px;
+    gap: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 234px;
+  }
+}
+
+.subcribe__form input {
+  font-family: $font-second;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 12px;
+  color: $text-color-main;
+  border: 1px solid #e7e7e7;
+  width: 100%;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+}
+
+.subcribe__form button {
+  width: 100%;
+  padding: 15px 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 256px;
+  }
+}

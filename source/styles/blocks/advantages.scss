@@ -1,0 +1,118 @@
+.advantages h2 {
+  margin: 0 20px 40px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 30px 32px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 110px 32px;
+  }
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0 20px 49px;
+  list-style: none;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0 30px 92px;
+    gap: 38px 139px;
+
+    @media screen and (max-width: $tablet-width-only) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: $tablet-width;
+        height: 1px;
+        background-color: #e6e6e6;
+        bottom: -47px;
+        left: -30px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    gap: 80px;
+    margin: 0 110px 69px;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  counter-increment: advantages-counter;
+
+  @media screen and (max-width: $mobile-width-only) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    width: 245px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+    padding: 40px 0 57px;
+
+    &::before {
+      content: counter(advantages-counter);
+      font-family: $font-second;
+      position: absolute;
+      font-size: 280px;
+      z-index: -1;
+      color: $bg-color-gray;
+      top: 48%;
+      right: 0;
+    }
+  }
+}
+
+.advantages__item p {
+  margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.advantages__icon {
+  min-width: 60px;
+  height: 60px;
+  background-color: $bg-color-main;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.advantages__icon-leaf {
+  background-image: url("../../icons/stack.svg#advantages-leaf");
+  background-size: 25px 28px;
+}
+
+.advantages__icon-powder {
+  background-image: url("../../icons/stack.svg#advantages-powder");
+  background-size: 26px 28px;
+}
+
+.advantages__icon-eat {
+  background-image: url("../../icons/stack.svg#advantages-eat");
+  background-size: 25px 30px;
+}
+
+.advantages__icon-clock {
+  background-image: url("../../icons/stack.svg#advantages-clock");
+  background-size: 26px 31px;
+}

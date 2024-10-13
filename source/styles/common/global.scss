@@ -1,1 +1,26 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-main;
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
