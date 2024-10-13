@@ -8,7 +8,7 @@
     padding: 0 0 101px;
 
     &::before {
-      content: '';
+      content: "";
       z-index: -999;
       position: absolute;
       height: 464px;
@@ -32,7 +32,7 @@
 
 .example__advantages-container {
   @media screen and (min-width: $desktop-width) {
-   max-width: 50%;
+    max-width: 50%;
   }
 }
 
@@ -100,7 +100,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   border-radius: 4px;
 
   @media screen and (min-width: $tablet-width) {
@@ -220,34 +220,34 @@
     border: 2px solid #666666;
     background-color: #ffffff;
     transition: border-color 0.3s ease;
-    }
-
-    svg {
-      color: #666666;
-      transition: color 0.3s ease;
-    }
-
-    &:hover {
-      background-color: $bg-color-main;
-    }
-
-    &:hover div {
-      border-color: $bg-color-main;
-    }
-
-    &:hover svg{
-      color: $bg-color-main;
-    }
-
-    &:active {
-      background-color: rgba($color: $bg-color-main, $alpha: 0.6);
-    }
-
-    &:active div {
-      border-color: rgba($color: $bg-color-main, $alpha: 0.6);
-    }
-
-    &:active svg{
-      color: rgba($color: $bg-color-main, $alpha: 0.6);
-    }
   }
+
+  svg {
+    color: #666666;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    background-color: $bg-color-main;
+  }
+
+  &:hover div {
+    border-color: $bg-color-main;
+  }
+
+  &:hover svg {
+    color: $bg-color-main;
+  }
+
+  &:active {
+    background-color: rgba($color: $bg-color-main, $alpha: 0.6);
+  }
+
+  &:active div {
+    border-color: rgba($color: $bg-color-main, $alpha: 0.6);
+  }
+
+  &:active svg {
+    color: rgba($color: $bg-color-main, $alpha: 0.6);
+  }
+}

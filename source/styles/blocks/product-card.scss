@@ -3,8 +3,8 @@
   line-height: 16px;
   display: grid;
   grid-template-areas:
-    "img title"
-    "img description"
+    "img    title"
+    "img    description"
     "button button";
   position: relative;
   padding: 20px 0 25px;
@@ -60,7 +60,7 @@
   text-transform: uppercase;
   grid-area: title;
   width: 80px;
-  margin:0 0 14px;
+  margin: 0 0 14px;
 
   @media screen and (min-width: $tablet-width) {
     justify-self: center;
@@ -74,8 +74,7 @@
 
 .product-card__img-wrapper {
   grid-area: img;
-  justify-self: center;
-  align-self: center;
+  place-self: center center;
   min-height: 107px;
   display: flex;
   justify-content: center;

@@ -30,7 +30,6 @@
 }
 
 .footer__logo-link {
-
   @media screen and (max-width: $mobile-width-only) {
     &::before {
       position: absolute;
@@ -48,12 +47,12 @@
     margin-right: 37px;
   }
 
-  &:hover g{
+  &:hover g {
     transition: fill 0.3s ease;
-    fill: #3E3E3E;
+    fill: #3e3e3e;
   }
 
-  &:active g{
+  &:active g {
     transition: fill 0.3s ease;
     fill: #6b6b6b;
   }
@@ -89,11 +88,11 @@
   width: 28px;
   height: 22px;
 
-  &:hover .footer__social-link::after{
+  &:hover .footer__social-link::after {
     background-color: $bg-color-main;
   }
 
-  &:active .footer__social-link::after{
+  &:active .footer__social-link::after {
     background-color: rgba($color: $bg-color-main, $alpha: 0.3);
   }
 }
