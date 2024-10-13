@@ -1,41 +1,60 @@
-.programs {
-  & h3 {
-    font-family: $font-second;
-    font-size: 24px;
-    line-height: 37px;
-    color: $text-color-black;
-    text-transform: uppercase;
-  }
-}
-
 .programs__list {
   padding: 0;
-  margin: 0;
+  margin: 0 20px 20px;
   list-style: none;
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 30px 45px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 0 110px 71px;
   }
 }
 
-.programs__item a {
-  font-family: $font-second;
-  font-size: 16px;
-  line-height: 16px;
-  color: $text-color-black;
-  text-transform: uppercase;
-  text-decoration: none;
+.programs__item {
+  background-color: $bg-color-gray;
+  padding-bottom: 20px;
+  width: auto;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 12px;
-    background-color: #000000;
-    mask-image: url("../../icons/stack.svg#arrow");
-    mask-repeat: no-repeat;
-    mask-size: 24px 12px;
-    mask-position: 100%;
+  @media screen and (max-width: $mobile-width-only) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    position: relative;
+    padding: 77px 63px 58px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 47px 61px 55px 52px;
+    min-width: 570px;
+  }
+}
+
+.programs__item-wrapper {
+  padding: 24px 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    gap: 62px;
+    margin-bottom: 39px;
   }
 }
 
@@ -46,9 +65,119 @@
   height: 50px;
   border-radius: 100%;
   background-color: $bg-color-main;
+  align-items: center;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    position: absolute;
+    right: 63px;
+    top: 50%;
+    transform: translateY(-45%);
     width: 200px;
     height: 200px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    right: 50px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.programs__item:first-child img {
+  @media screen and (min-width: $tablet-width) {
+    margin-top: -25px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-top: -10px;
+  }
+}
+
+.programs h3 {
+  font-family: $font-second;
+  font-size: 24px;
+  line-height: 37px;
+  color: $text-color-black;
+  text-transform: uppercase;
+  margin: 0;
+  order: 1;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.programs__item p {
+  margin: 0 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 340px;
+    margin: 0 0 50px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 457px;
+    margin-bottom: 28px;
+  }
+}
+
+.programs__link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-color-black;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 17px 20px 0;
+  max-width: max-content;
+
+  div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 12px;
+      background-color: #000000;
+      mask-image: url("../../icons/stack.svg#programs-arrow");
+      mask-repeat: no-repeat;
+      position: absolute;
+      right: -6px;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    gap: 25px;
+    min-width: 161px;
+  }
+
+  &:hover div {
+    width: 26px;
+  }
+
+  &:active {
+    transition: opacity 0.3s ease;
+    opacity: 0.3;
   }
 }

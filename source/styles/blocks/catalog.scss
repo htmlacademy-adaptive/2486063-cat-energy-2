@@ -1,0 +1,131 @@
+.catalog .h1 {
+  margin: 27px 20px 41px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 30px 165px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 110px 165px;
+  }
+}
+
+.catalog__list {
+  padding: 0 20px 26px;
+  margin: 0 0 22px;
+  list-style: none;
+
+  @media screen and (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 141px 60px;
+    padding: 0 30px;
+    margin-bottom: 74px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0;
+    gap: 144px 80px;
+    margin: 0 110px 71px;
+  }
+}
+
+.catalog__item:last-child h3 {
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-black-second;
+  text-transform: uppercase;
+  padding: 78px 0 8px;
+  margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 134px;
+    margin: 0 auto;
+    padding: 0 0 23px;
+  }
+}
+
+.catalog__item:last-child p {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 21px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 168px;
+    margin: 0 auto 82px;
+  }
+}
+
+.catalog__item {
+  &:last-child {
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 39px;
+      right: 50%;
+      transform: translateX(50%);
+      width: 30px;
+      height: 2px;
+      background-color: #ebebeb;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 39px;
+      right: 50%;
+      width: 30px;
+      height: 2px;
+      transform: translateX(50%) rotate(90deg);
+      background-color: #ebebeb;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      padding: 162px 37px 40px;
+      border: 1px solid #f2f2f2;
+      min-width: 324px;
+
+      &::before {
+        width: 60px;
+        top: 80px;
+      }
+
+      &::after {
+        width: 60px;
+        top: 80px;
+      }
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      min-width: 245px;
+
+      &::before {
+        width: 60px;
+        top: 80px;
+      }
+
+      &::after {
+        width: 60px;
+        top: 80px;
+      }
+    }
+  }
+}
+
+.catalog__item:last-child .main-button {
+  width: 100%;
+}

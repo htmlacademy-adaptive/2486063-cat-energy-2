@@ -1,0 +1,12 @@
+.image-background-filter {
+  position: absolute;
+  pointer-events: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: -1;
+  }
+}

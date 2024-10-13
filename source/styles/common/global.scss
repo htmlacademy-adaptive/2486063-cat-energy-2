@@ -12,13 +12,15 @@ body {
   font-family: $font-main;
   font-size: 14px;
   line-height: 18px;
-  color: $text-collor-main;
+  color: $text-color-main;
+  width: $mobile-width;
+  margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
+  @media screen and (min-width: $tablet-width) {
+    width: $tablet-width;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
