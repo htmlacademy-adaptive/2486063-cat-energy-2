@@ -16,6 +16,10 @@
       right: 0;
       bottom: 0;
       background-color: $bg-color-gray;
+
+      @media screen and (min-width: $desktop-width) {
+        height: calc(100% - 139px);
+      }
     }
   }
 
@@ -23,6 +27,12 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+  }
+}
+
+.example__advantages-container {
+  @media screen and (min-width: $desktop-width) {
+   max-width: 50%;
   }
 }
 

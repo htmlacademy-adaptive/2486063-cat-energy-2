@@ -9,6 +9,7 @@
 
   @media screen and (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
     margin: 0 110px 71px;
   }
@@ -17,7 +18,7 @@
 .programs__item {
   background-color: $bg-color-gray;
   padding-bottom: 20px;
-  width: 100%;
+  width: auto;
 
   @media screen and (max-width: $mobile-width-only) {
     &:not(:last-child) {
@@ -36,6 +37,7 @@
 
   @media screen and (min-width: $desktop-width) {
     padding: 47px 61px 55px 52px;
+    min-width: 570px;
   }
 }
 
@@ -137,7 +139,7 @@
   text-transform: uppercase;
   text-decoration: none;
   margin: 17px 20px 0;
-  min-width: 133px;
+  max-width: max-content;
 
   div {
     position: relative;

@@ -151,6 +151,17 @@
     gap: 23px;
     width: auto;
   }
+
+  &:hover .footer__html-academy-logo::after {
+    transition: background-color 0.3s ease;
+    background-color: $bg-color-main;
+  }
+
+  &:active .footer__link-html-academy,
+  &:active .footer__html-academy-logo::after {
+    transition: opacity 0.3s ease;
+    opacity: 0.3;
+  }
 }
 
 .footer__link-html-academy {
@@ -159,14 +170,6 @@
   color: $text-color-main;
   text-decoration: none;
   transition: color 0.3s ease;
-
-  &:hover{
-    color: $bg-color-main;
-  }
-
-  &:active{
-    color: rgba($color: $bg-color-main, $alpha: 0.3);
-  }
 }
 
 .footer__html-academy-logo {
@@ -179,15 +182,5 @@
     mask-image: url("../../icons/stack.svg#footer-html-academy");
     mask-repeat: no-repeat;
     mask-size: 27px 34px;
-  }
-
-  &:hover.footer__html-academy-logo::after{
-    transition: background-color 0.3s ease;
-    background-color: $bg-color-main;
-  }
-
-  &:active.footer__html-academy-logo::after{
-    transition: background-color 0.3s ease;
-    background-color: rgba($color: $bg-color-main, $alpha: 0.3);
   }
 }
