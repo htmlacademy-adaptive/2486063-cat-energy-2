@@ -6,7 +6,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin: 0 110px 165px;
+    margin: 0 110px 162px;
   }
 }
 
@@ -34,41 +34,20 @@
   }
 }
 
-.catalog__item:last-child h3 {
-  font-family: $font-second;
-  font-size: 16px;
-  line-height: 20px;
-  color: $text-color-black-second;
-  text-transform: uppercase;
-  padding: 78px 0 8px;
-  margin: 0;
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 24px;
-    max-width: 134px;
-    margin: 0 auto;
-    padding: 0 0 23px;
-  }
-}
-
-.catalog__item:last-child p {
-  font-size: 12px;
-  line-height: 16px;
-  margin: 0 0 21px;
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 18px;
-    max-width: 168px;
-    margin: 0 auto 82px;
-  }
-}
-
 .catalog__item {
+  @media screen and (min-width: $tablet-width) {
+    max-width: 324px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 245px;
+  }
+
   &:last-child {
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     &::before {
       content: "";
@@ -95,7 +74,7 @@
     }
 
     @media screen and (min-width: $tablet-width) {
-      padding: 162px 37px 40px;
+      padding: 156px 37px 40px;
       border: 1px solid #f2f2f2;
       min-width: 324px;
 
@@ -112,6 +91,7 @@
 
     @media screen and (min-width: $desktop-width) {
       min-width: 245px;
+      padding: 149px 37px 40px;
 
       &::before {
         width: 60px;
@@ -126,6 +106,42 @@
   }
 }
 
+.catalog__item:last-child h3 {
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-black-second;
+  text-transform: uppercase;
+  padding: 78px 0 8px;
+  margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 134px;
+    margin: 0 auto;
+    padding: 0 0 25px;
+  }
+}
+
+.catalog__item:last-child p {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 21px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 168px;
+    margin: 0 auto 84px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 auto 90px;
+  }
+}
+
 .catalog__item:last-child .main-button {
   width: 100%;
+  margin-top: auto;
 }
