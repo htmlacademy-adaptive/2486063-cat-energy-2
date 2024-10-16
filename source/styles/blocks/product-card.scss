@@ -123,6 +123,7 @@
 .product-card__description-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 
   @media screen and (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
@@ -132,6 +133,10 @@
 
 .product-card__description-wrapper p {
   margin: 0;
+}
+
+.product-card__description-wrapper p:last-child {
+  text-align: right;
 }
 
 .product-card .main-button {

@@ -35,6 +35,14 @@
 }
 
 .catalog__item {
+  @media screen and (min-width: $tablet-width) {
+    max-width: 324px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 245px;
+  }
+
   &:last-child {
     text-align: center;
     position: relative;
