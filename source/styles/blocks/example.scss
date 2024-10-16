@@ -141,6 +141,7 @@
   padding: 0 15px;
   background-color: $bg-color-gray;
   bottom: -16px;
+  max-width: 100%;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 14px;
