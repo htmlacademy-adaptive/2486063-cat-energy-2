@@ -8,8 +8,12 @@
     height: 2px;
     background-color: $bg-color-main;
     position: absolute;
-    top: 13px;
+    top: 10px;
     z-index: -1;
+
+    @media screen and (min-width: $desktop-width) {
+      top: 20px;
+    }
   }
 }
 

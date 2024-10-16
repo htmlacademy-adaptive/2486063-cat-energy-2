@@ -1,7 +1,7 @@
 .navigation {
   @media screen and (max-width: $mobile-width-only) {
     position: absolute;
-    top: 66px;
+    top: 64px;
     left: 50%;
     transform: translateX(-50%);
     width: $mobile-width;
