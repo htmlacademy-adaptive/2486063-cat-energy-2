@@ -24,6 +24,8 @@
 }
 
 .hero__bg-wrapper {
+  min-height: 302px;
+
   @media screen and (max-width: $mobile-width-only) {
     height: calc(100% - 199px);
   }
@@ -31,14 +33,13 @@
   @media screen and (min-width: $desktop-width) {
     top: 0;
     left: 50%;
+    width: 50vw;
   }
 }
 
 .hero__background {
-  z-index: -999;
+  z-index: -10;
   position: relative;
-  top: auto;
-  left: auto;
 
   @media screen and (min-width: $tablet-width) {
     display: none;
@@ -51,6 +52,15 @@
 
 .hero__background img {
   display: block;
+  object-fit: cover;
+
+  @media screen and (max-width: $mobile-width-only) {
+    width: 100vw;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .hero h2 {
@@ -96,7 +106,7 @@
 .hero__food-img {
   padding: 0 20px;
   object-fit: cover;
-  margin-bottom: 3px;
+  margin: 0 auto 3px;
 
   @media screen and (min-width: $tablet-width) {
     order: 1;

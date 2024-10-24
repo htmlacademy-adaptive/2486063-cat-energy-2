@@ -1,17 +1,20 @@
 .footer {
   position: relative;
+  background-color: $bg-color-gray;
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 17px;
   padding: 40px 20px;
-  background-color: $bg-color-gray;
-  gap: 16px;
 
   @media screen and (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 58px 30px;
     gap: 37px;
+    padding: 58px 30px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -28,7 +31,6 @@
 }
 
 .footer__logo-link {
-
   g {
     transition: fill 0.3s ease;
   }
@@ -136,7 +138,7 @@
 
   @media screen and (min-width: $tablet-width) {
     gap: 23px;
-    width: 163px;
+    width: 164px;
   }
 
   &:hover .footer__html-academy-logo::after {

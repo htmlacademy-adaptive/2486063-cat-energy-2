@@ -6,23 +6,31 @@
     background: none;
     position: relative;
     padding: 0 0 101px;
-
-    &::before {
-      content: "";
-      z-index: -999;
-      position: absolute;
-      height: 464px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: $bg-color-gray;
-
-      @media screen and (min-width: $desktop-width) {
-        height: calc(100% - 139px);
-      }
-    }
   }
 
+  @media screen and (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .example::before {
+    content: "";
+    z-index: -999;
+    position: absolute;
+    height: 464px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $bg-color-gray;
+
+    @media screen and (min-width: $desktop-width) {
+      height: calc(100% - 139px);
+    }
+  }
+}
+
+.example__example-container {
   @media screen and (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -81,6 +89,7 @@
   gap: 32px;
   margin-bottom: 34px;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -122,6 +131,7 @@
   color: $text-color-black;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 30px;
@@ -191,12 +201,19 @@
 }
 
 .example__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   top: 0;
   right: 0;
   position: relative;
-  max-width: 560px;
+  max-width: 280px;
   height: 100%;
   margin: 0 auto;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 560px;
+  }
 }
 
 .example__slider-button {
@@ -211,12 +228,13 @@
   border: 0;
   padding: 0;
   transition: background-color 0.3s ease;
+  z-index: 10;
 
   @media screen and (min-width: $tablet-width) {
     height: 511px;
   }
 
-  div {
+  span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,7 +256,7 @@
     background-color: $bg-color-main;
   }
 
-  &:hover div {
+  &:hover span {
     border-color: $bg-color-main;
   }
 
@@ -250,11 +268,22 @@
     background-color: rgba($color: $bg-color-main, $alpha: 0.6);
   }
 
-  &:active div {
+  &:active span {
     border-color: rgba($color: $bg-color-main, $alpha: 0.6);
   }
 
   &:active svg {
     color: rgba($color: $bg-color-main, $alpha: 0.6);
   }
+}
+
+.example__slider-fat-cat {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+.example__slider-slim-cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%);
 }

@@ -17,7 +17,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 55px 110px 73px;
+    padding: 55px 110px 64px;
   }
 }
 
@@ -53,7 +53,6 @@
 
 .header__logo-label {
   margin-left: -10px;
-  margin-bottom: -4px;
 
   @media screen and (min-width: $tablet-width) {
     display: none;
@@ -102,13 +101,9 @@
   }
 }
 
-.header:has(.navigation__non-js) {
+.header:has(.navigation--no-js) {
   .header__toggle {
-    display: none;
-  }
-
-  .header__wrapper {
-    gap: 56px;
-    justify-content: start;
+    opacity: 0;
+    pointer-events: none;
   }
 }

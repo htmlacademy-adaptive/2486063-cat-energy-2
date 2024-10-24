@@ -21,7 +21,7 @@
   @media screen and (min-width: $desktop-width) {
     padding: 0;
     width: 100%;
-    margin: 80px 0px 100px;
+    margin: 80px 0 96px;
   }
 }
 
@@ -29,8 +29,8 @@
   position: relative;
   padding: 11px 0 19px;
   align-items: center;
-  border-top: 1px solid #cdcdcd;;
-  border-bottom:  1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
 
   @media screen and (min-width: $tablet-width) {
     display: grid;
@@ -66,6 +66,7 @@
 }
 
 .optional-products h3 {
+  font-weight: 400;
   font-family: $font-second;
   font-size: 16px;
   line-height: 16px;
@@ -154,11 +155,13 @@
 
 .optional-products__promo-background img {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .optional-products__promo-background {
   position: relative;
-  z-index: -999;
+  z-index: -10;
 }
 
 .optional-products__promo p {

@@ -28,7 +28,7 @@
   }
 
   @media screen and (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    padding: 77px 63px 62px 52px;
+    padding: 77px 63px 58px 52px;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -68,10 +68,6 @@
   background-color: $bg-color-main;
   align-items: center;
 
-  img {
-    display: block;
-  }
-
   @media screen and (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     position: absolute;
     right: 63px;
@@ -88,6 +84,59 @@
   }
 }
 
+.programs__picture-bg::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.programs__picture-bg--cat-sit {
+  &::before {
+    background-image: url("../../images/programs/programs-cat1.svg");
+    background-size: 36px 57px;
+    background-position: 0 -3px;
+    width: 36px;
+    height: 57px;
+
+    @media screen and (min-width: $tablet-width) {
+      background-size: 140px 210px;
+      background-position: 0 -6px;
+      width: 140px;
+      height: 230px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      background-size: 70px 100px;
+      background-position: 0 -1px;
+      width: 70px;
+      height: 110px;
+    }
+  }
+}
+
+.programs__picture-bg--cat-walk {
+  &::before {
+    background-image: url("../../images/programs/programs-cat2.svg");
+    background-size: 67px 28px;
+    width: 67px;
+    height: 28px;
+
+    @media screen and (min-width: $tablet-width) {
+      background-size: 268px 112px;
+      width: 268px;
+      height: 112px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      background-size: 134px 56px;
+      width: 134px;
+      height: 56px;
+    }
+  }
+}
+
 .programs__item:first-child img {
   @media screen and (min-width: $tablet-width) {
     margin-top: -25px;
@@ -99,6 +148,7 @@
 }
 
 .programs h3 {
+  font-weight: 400;
   font-family: $font-second;
   font-size: 24px;
   line-height: 37px;
@@ -114,7 +164,7 @@
 }
 
 .programs__item p {
-  margin: 0 20px 34px;
+  margin: 0 20px 18px;
   padding-bottom: 23px;
   border-bottom: 1px solid #e6e6e6;
 
@@ -122,14 +172,15 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 340px;
-    margin: 0 0 75px;
+    margin: 0 0 50px;
     padding: 0;
     border-bottom: none;
+    color: $text-color-black;
   }
 
   @media screen and (min-width: $desktop-width) {
     max-width: 457px;
-    margin-bottom: 55px;
+    margin-bottom: 27px;
   }
 }
 
@@ -145,7 +196,6 @@
   text-decoration: none;
   margin: 0 20px;
   max-width: max-content;
-  position: absolute;
   bottom: 20px;
 
   @media screen and (min-width: $tablet-width) {
@@ -161,10 +211,11 @@
     display: flex;
     align-items: center;
     content: "";
-    width: 18px;
+    min-width: 18px;
     height: 2px;
     background-color: #000000;
     transition: width 0.3s ease;
+    margin-right: 6px;
 
     &::after {
       content: "";
@@ -188,7 +239,8 @@
   }
 
   &:hover div {
-    width: 26px;
+    transition: min-width 0.3s ease;
+    min-width: 26px;
   }
 
   &:active {
