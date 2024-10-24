@@ -25,7 +25,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    position:absolute;
+    position: absolute;
     border: none;
     height: 100%;
     top: 0;
@@ -33,7 +33,7 @@
   }
 }
 
-.address__wrapper {
+.contacts__address-wrapper {
   display: flex;
   padding: 26px 20px;
   align-items: center;
@@ -61,7 +61,7 @@
   }
 }
 
-.address__wrapper p {
+.contacts__address-wrapper p {
   margin: 0;
 }
 
@@ -70,7 +70,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: $text-color-black;
+  color: #111111;
   text-transform: uppercase;
   width: 100%;
 
@@ -104,5 +104,34 @@
   @media screen and (min-width: $tablet-width) {
     display: inline-block;
     margin-top: 19px;
+  }
+}
+
+.contacts__map-static {
+  width: 100%;
+  display: none;
+
+  & img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    position: absolute;
+    border: none;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.contacts:has(.contacts__map-static--no-js) {
+  .contacts__map-static--no-js {
+    display: block;
+  }
+
+  & iframe {
+    display: none;
   }
 }

@@ -6,7 +6,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin: 0 110px 162px;
+    margin: 10 110px 162px;
   }
 }
 
@@ -108,9 +108,10 @@
 
 .catalog__item:last-child h3 {
   font-family: $font-second;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: $text-color-black-second;
+  color: #111111;
   text-transform: uppercase;
   padding: 78px 0 8px;
   margin: 0;
@@ -144,4 +145,19 @@
 .catalog__item:last-child .main-button {
   width: 100%;
   margin-top: auto;
+}
+
+.catalog__item:last-child a {
+  display: none;
+  text-decoration: none;
+}
+
+.catalog__item:has(.catalog__item--no-js) {
+  & a {
+    display: block;
+  }
+
+  & button {
+    display: none;
+  }
 }

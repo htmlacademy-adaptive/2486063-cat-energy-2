@@ -2,9 +2,8 @@
   @media screen and (max-width: $mobile-width-only) {
     position: absolute;
     top: 64px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: $mobile-width;
+    left: 0;
+    right: 0;
     z-index: 10;
     background-color: #ffffff;
 
@@ -122,6 +121,7 @@
 .navigation--no-js {
   @media screen and (max-width: $mobile-width-only) {
     position: static;
+    display: block;
     transform: translateX(0);
   }
 }
