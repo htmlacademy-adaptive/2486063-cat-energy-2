@@ -54,8 +54,13 @@
 
 .product-card a {
   text-decoration: none;
-  display: flex;
-  justify-content: center;
+}
+
+.product-card__title {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .product-card h3 {
@@ -150,4 +155,5 @@
 .product-card .main-button {
   grid-area: button;
   align-self: end;
+  justify-content: center;
 }

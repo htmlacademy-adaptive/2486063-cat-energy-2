@@ -4,13 +4,13 @@
   &::before {
     content: "";
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 2px;
     background-color: $bg-color-main;
     position: absolute;
     top: 10px;
     z-index: -1;
-    left: calc(-50vw + 50%);
+    left: 0;
 
     @media screen and (min-width: $desktop-width) {
       top: 20px;
@@ -28,6 +28,7 @@
   margin: 0;
   background-color: #ffffff;
   padding: 0 40px 0 20px;
+  max-width: 1440px;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 32px;
@@ -39,6 +40,6 @@
   @media screen and (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    margin: 0 70px;
+    margin: 0 calc((100vw - 1440px) / 2 + 70px);
   }
 }
