@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navigation = document.querySelector('.navigation');
   const navToggle = document.querySelector('.header__toggle');
   const contacts = document.querySelector('.contacts__map-static');
-  const catalogItem = document.querySelector('.catalog__item');
+  const link = document.querySelector('.more-cards-js');
 
   if (navigation) {
     navigation.classList.remove('navigation--no-js');
@@ -12,8 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     contacts.classList.remove('contacts__map-static--no-js');
   }
 
-  if (catalogItem) {
-    catalogItem.classList.remove('catalog__item--no-js');
+  const button = document.createElement('button');
+  button.className = 'main-button main-button--gray';
+  button.type = 'button';
+  button.textContent = 'показать все';
+
+  if (link) {
+    link.parentNode.replaceChild(button, link);
   }
 
   navToggle.addEventListener('click', () => {

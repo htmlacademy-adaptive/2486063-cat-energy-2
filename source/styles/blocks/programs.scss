@@ -62,8 +62,8 @@
 .programs__picture-bg {
   display: flex;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
   border-radius: 100%;
   background-color: $bg-color-main;
   align-items: center;
@@ -73,14 +73,14 @@
     right: 63px;
     top: 50%;
     transform: translateY(-45%);
-    width: 200px;
-    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
   }
 
   @media screen and (min-width: $desktop-width) {
     right: 50px;
-    width: 100px;
-    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
   }
 }
 
@@ -195,7 +195,7 @@
   text-transform: uppercase;
   text-decoration: none;
   margin: 0 20px;
-  max-width: max-content;
+  max-width: 457px;
   bottom: 20px;
 
   @media screen and (min-width: $tablet-width) {
