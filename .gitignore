@@ -1,6 +1,5 @@
 node_modules
 build
-.vs
 .idea
 .DS_Store
 raw/**/*.jpg
